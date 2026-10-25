@@ -1,0 +1,180 @@
+[
+  {
+    "id": "trip_sample_goa_001",
+    "title": "Sun & Culture Weekend in Goa",
+    "created_at": "2026-03-15T10:30:00",
+    "destination": "Goa",
+    "country": "India",
+    "preferences": {
+      "destination": "Goa",
+      "vibe": "Beach",
+      "duration": 3,
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-12",
+      "budget_tier": "Moderate",
+      "approx_budget": 25000,
+      "travel_party": "Friends",
+      "pace": "Moderate",
+      "interests": ["Food", "Beach", "Nightlife", "History"],
+      "dietary": "No preference",
+      "notes": "Interested in Portuguese heritage architecture and beach shacks"
+    },
+    "itinerary": {
+      "destination": "Goa",
+      "country": "India",
+      "days": [
+        {
+          "day": 1,
+          "theme": "North Goa Heritage & Sunset",
+          "area": "Panaji & Candolim",
+          "morning": {
+            "name": "Fontainhas Latin Quarter Walking Tour",
+            "description": "Explore colorful colonial Portuguese villas, charming art galleries, and heritage bakeries.",
+            "time": "09:00 - 11:30",
+            "duration": "2.5 hours",
+            "cost_inr": 300,
+            "category": "Culture & Heritage",
+            "location": "Fontainhas, Panaji"
+          },
+          "lunch": {
+            "name": "Viva Panjim Traditional Feast",
+            "description": "Family-run heritage house serving authentic Goan fish curry, prawn balchao, and bebinca.",
+            "time": "12:30 - 14:00",
+            "duration": "1.5 hours",
+            "cost_inr": 900,
+            "category": "Food & Dining",
+            "location": "Panaji Old Quarter"
+          },
+          "afternoon": {
+            "name": "Aguada Fort & Lighthouse",
+            "description": "17th-century Portuguese fortress overlooking the vast Arabian Sea and Mandovi estuary.",
+            "time": "15:00 - 17:00",
+            "duration": "2.0 hours",
+            "cost_inr": 150,
+            "category": "Sightseeing",
+            "location": "Sinquerim / Candolim"
+          },
+          "evening": {
+            "name": "Sundowner & Dinner at Thalassa / Beachside Shack",
+            "description": "Catch breathtaking sunset views with live acoustic music and fresh coastal seafood.",
+            "time": "18:00 - 21:00",
+            "duration": "3.0 hours",
+            "cost_inr": 1800,
+            "category": "Dining & Nightlife",
+            "location": "Vagator / Candolim"
+          },
+          "daily_cost": {
+            "activities": 450,
+            "food": 2700,
+            "transport": 600,
+            "total": 3750
+          }
+        },
+        {
+          "day": 2,
+          "theme": "Coastal Adventure & Flea Markets",
+          "area": "Anjuna & Vagator",
+          "morning": {
+            "name": "Anjuna Beach & Water Sports",
+            "description": "Jet skiing, parasailing or a calm stroll along the iconic red-cliff coastline.",
+            "time": "09:30 - 12:00",
+            "duration": "2.5 hours",
+            "cost_inr": 1500,
+            "category": "Adventure & Nature",
+            "location": "Anjuna Beach"
+          },
+          "lunch": {
+            "name": "Burger Factory / Artjuna Garden Cafe",
+            "description": "Healthy Mediterranean plates, artisan coffee, and relaxed garden vibes under mango trees.",
+            "time": "12:30 - 14:00",
+            "duration": "1.5 hours",
+            "cost_inr": 750,
+            "category": "Food & Dining",
+            "location": "Anjuna"
+          },
+          "afternoon": {
+            "name": "Chapora Fort Panoramic Walk",
+            "description": "Climb up the famed hilltop fort made legendary by cinema with 360-degree views of Ozran Beach.",
+            "time": "15:30 - 17:30",
+            "duration": "2.0 hours",
+            "cost_inr": 50,
+            "category": "Sightseeing",
+            "location": "Chapora"
+          },
+          "evening": {
+            "name": "Curlys / Tito's Lane Night Vibe",
+            "description": "Dinner with coastal breeze and casual evening music along the beach strip.",
+            "time": "18:30 - 21:30",
+            "duration": "3.0 hours",
+            "cost_inr": 1600,
+            "category": "Nightlife & Dining",
+            "location": "Anjuna / Baga"
+          },
+          "daily_cost": {
+            "activities": 1550,
+            "food": 2350,
+            "transport": 700,
+            "total": 4600
+          }
+        },
+        {
+          "day": 3,
+          "theme": "Spice Plantations & South Goa Serenity",
+          "area": "Ponda & South Goa",
+          "morning": {
+            "name": "Sahakari Spice Farm Guided Tour",
+            "description": "Traditional welcome with betel nut garlands, guided plantation walk, and herbal spice tastings.",
+            "time": "09:30 - 12:00",
+            "duration": "2.5 hours",
+            "cost_inr": 600,
+            "category": "Nature & Culture",
+            "location": "Ponda"
+          },
+          "lunch": {
+            "name": "Buffet Feast on Banana Leaf",
+            "description": "Authentic organic farm lunch cooked with fresh estate spices, cashew feni tasting, and sweets.",
+            "time": "12:15 - 13:45",
+            "duration": "1.5 hours",
+            "cost_inr": 500,
+            "category": "Food & Dining",
+            "location": "Sahakari Plantation, Ponda"
+          },
+          "afternoon": {
+            "name": "Basilica of Bom Jesus & Se Cathedral",
+            "description": "UNESCO World Heritage site showcasing baroque Portuguese architecture from 1605.",
+            "time": "14:30 - 16:30",
+            "duration": "2.0 hours",
+            "cost_inr": 100,
+            "category": "Culture & Heritage",
+            "location": "Old Goa"
+          },
+          "evening": {
+            "name": "Mandovi River Cruise & Souvenir Shopping",
+            "description": "Gentle sunset cruise with Goan folk dance performances followed by cashew and feni shopping.",
+            "time": "17:30 - 20:00",
+            "duration": "2.5 hours",
+            "cost_inr": 1100,
+            "category": "Leisure & Shopping",
+            "location": "Panaji Jetty"
+          },
+          "daily_cost": {
+            "activities": 1800,
+            "food": 500,
+            "transport": 900,
+            "total": 3200
+          }
+        }
+      ],
+      "cost_summary": {
+        "activities_total": 3800,
+        "food_total": 5550,
+        "transport_total": 2200,
+        "accommodation_estimated": 9000,
+        "trip_total_inr": 20550,
+        "trip_total_usd": 247
+      }
+    },
+    "estimated_cost": 20550
+  }
+]
+
