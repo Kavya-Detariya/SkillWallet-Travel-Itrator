@@ -47,10 +47,10 @@ Designed with a modern wanderlust aesthetic, this application solves common trav
 
 ```text
 SkillWallet/
-├── app.py                      # Main Streamlit UI & interactive orchestration
+├── app.py                      # Main Streamlit UI & interactive orchestration (Entry Point)
 ├── requirements.txt            # Minimal, pinned dependencies
 ├── README.md                   # Documentation & deployment guide
-├── .gitignore                  # Git exclusions (secrets, venv, pycache)
+├── .gitignore                  # Git exclusions (secrets, venv, credentials)
 │
 ├── .streamlit/
 │   └── config.toml             # Custom wanderlust theme styling & port settings
@@ -97,60 +97,60 @@ The app will launch at `http://localhost:8501`.
 
 ---
 
-## 🔑 Optional API Key Setup
+## 🔑 Streamlit Secrets & API Key Configuration
 
-The app runs completely in **Demo Mode** without any keys. To enable live AI generations:
+The application never hardcodes API keys and is fully demonstrable in **Demo Mode** without any credentials.
 
-### Option A: Enter via UI
-Enter your **Gemini** or **Groq** API key directly into the sidebar password field. Keys are kept securely in memory and never exposed or persisted to disk.
+To use live AI generation with Gemini or Groq:
 
-### Option B: Local Streamlit Secrets
-Create a `.streamlit/secrets.toml` file (this file is ignored in `.gitignore`):
-```toml
-GEMINI_API_KEY = "your-gemini-api-key-here"
-GROQ_API_KEY = "your-groq-api-key-here"
-```
+### For Local Development:
+- **Option 1 (UI Entry):** Enter your API key securely into the sidebar password input. It is stored only in session state for your session and never written to disk.
+- **Option 2 (Local Secrets):** Create a `.streamlit/secrets.toml` file (which is git-ignored):
+  ```toml
+  GEMINI_API_KEY = "your-gemini-api-key"
+  GROQ_API_KEY = "your-groq-api-key"
+  ```
+
+### For Cloud Deployment:
+Add credentials securely via the Streamlit Community Cloud management dashboard under **App Settings → Secrets**.
 
 ---
 
-## ☁️ Deployment to Streamlit Community Cloud
+## ☁️ Step-by-Step Deployment to Streamlit Community Cloud
 
 Deploying to **Streamlit Community Cloud** takes under 2 minutes:
 
-1. **Push to GitHub**:
+1. **Push project to GitHub:**
    ```bash
    git init
    git add .
-   git commit -m "Initial commit of Personalized Travel Itinerary Planner"
+   git commit -m "Personalized Travel Itinerary Planner - Capstone 4"
    git branch -M main
    git remote add origin https://github.com/<your-username>/<your-repo-name>.git
    git push -u origin main
    ```
-
-2. **Open Streamlit Cloud**:
-   - Go to [share.streamlit.io](https://share.streamlit.io) and log in with GitHub.
-   - Click **New app**.
-
-3. **Select Repository**:
-   - Repository: `<your-username>/<your-repo-name>`
-   - Branch: `main`
-   - Main file path: `app.py`
-
-4. **Configure Secrets (Optional)**:
-   - In App Settings > **Secrets**, paste:
+2. **Open Streamlit Community Cloud:**
+   - Navigate to [share.streamlit.io](https://share.streamlit.io).
+3. **Connect GitHub:**
+   - Sign in and authorize your GitHub account.
+4. **Select the repository:**
+   - Choose `<your-username>/<your-repo-name>` and branch `main`.
+5. **Select `app.py`:**
+   - Set the Main file path to `app.py`.
+6. **Add API secrets through Advanced Settings → Secrets:**
+   - In **Advanced settings** (or App Settings > Secrets), paste your keys:
      ```toml
      GEMINI_API_KEY = "your-gemini-api-key"
      GROQ_API_KEY = "your-groq-api-key"
      ```
-
-5. **Deploy**:
-   - Click **Deploy!**
-   - The app will build automatically using `requirements.txt` and `.streamlit/config.toml`.
+7. **Deploy:**
+   - Click **Deploy!** The cloud builder will install dependencies from `requirements.txt` and launch the app.
+8. **Open the generated `streamlit.app` URL:**
+   - Access your live, globally accessible travel planner URL.
 
 ---
 
 ## 🛡️ Architecture & Security Considerations
-- **No Hardcoded Secrets:** Keys are read dynamically via `st.secrets` or password input.
+- **No Hardcoded Secrets:** Keys are read dynamically via `st.secrets` or the UI password input.
 - **Fail-Safe Fallbacks:** Any network timeout or API rate limit falls back gracefully to curated demo data without crashing the interface.
 - **Lightweight Footprint:** Zero external database overhead.
-

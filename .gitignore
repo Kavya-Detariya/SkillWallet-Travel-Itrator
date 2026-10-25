@@ -1,4 +1,4 @@
-# Python
+# Python runtime & environments
 __pycache__/
 *.py[cod]
 *$py.class
@@ -24,21 +24,25 @@ wheels/
 .installed.cfg
 *.egg
 
-# Streamlit secrets and runtime
+# Secrets, API keys & Credentials (MANDATORY SECURITY)
 .streamlit/secrets.toml
 .streamlit/*.local.toml
-
-# Environment variables
+secrets.toml
+secrets.json
 .env
 .env.*
+*.key
+*.pem
+*credentials*
+*secret*
 
-# IDEs
+# IDEs & Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+# Operating System Files
 .DS_Store
 Thumbs.db
-
+desktop.ini
